@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/faustogute/pokedex/issues"
   },
-  "homepage": "https://github.com/faustogute/pokedex#readme"
+  "homepage": "https://github.com/faustogute/pokedex#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.6"
+  }
 }
