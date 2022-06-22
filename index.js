@@ -28,6 +28,7 @@ const getPokemonData = async (pokemon) => {
     weightTag.innerHTML = "";
     idScreen.innerHTML = "";
     typeScreen.innerHTML = "";
+    imageScreen.style.backgroundImage = "";
   }
 };
 
