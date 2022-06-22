@@ -8,19 +8,24 @@
     <title>Pokédex</title>
   </head>
   <body>
-    <div id="container" class="container mx-auto px-4 py-4">
+    <div
+      id="container"
+      class="container mx-auto px-4 py-4 border-2 border-red-600"
+    >
       <div id="logo" class="flex justify-center my-4">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/269px-International_Pok%C3%A9mon_logo.svg.png"
           alt="logo"
         />
       </div>
-      <div class="rounded border-2 border-red-600 flex justify-center py-2">
+      <div
+        class="rounded border-2 border-red-600 flex justify-center py-2 my-4"
+      >
         <input
           id="search-box"
           type="text"
           placeholder="Name / id"
-          class="rounded border-2 mx-3"
+          class="rounded border-2 mx-3 px-2"
         />
         <button
           class="px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm mx-3"
@@ -28,7 +33,48 @@
           Search
         </button>
       </div>
-      <div id="pokedex"></div>
+      <div
+        id="pokedex"
+        class="rounded border-2 border-red-600 grid grid-cols-8 h-[40rem]"
+      >
+        <div
+          id="left-panel"
+          class="rounded border-2 border-red-600 grid grid-rows-4 grid-flow-col gap-2 col-start-2 col-span-3"
+        >
+          <div class="rounded border-2 border-red-600" id="top-panel-left">
+            <div>Big circle</div>
+            <div>small circle 1</div>
+            <div>small circle 2</div>
+            <div>small circle 3</div>
+          </div>
+          <div
+            id="middle-panel-left"
+            class="rounded border-2 border-red-600 row-span-2"
+          >
+            <div id="screen"><h3>screen</h3></div>
+          </div>
+          <div id="bottom-panel-left" class="rounded border-2 border-red-600">
+            <div id="name-tag"><h3>name tag</h3></div>
+          </div>
+        </div>
+        <div
+          id="right-panel"
+          class="rounded border-2 border-red-600 grid grid-rows-4 grid-flow-col gap-2 col-start-5 col-span-3"
+        >
+          <div class="rounded border-2 border-red-600" id="top-panel-left">
+            <h3>Blank</h3>
+          </div>
+          <div
+            id="middle-panel-left"
+            class="rounded border-2 border-red-600 row-span-2"
+          >
+            <div id="screen"><h3>small screen</h3></div>
+          </div>
+          <div id="bottom-panel-left" class="rounded border-2 border-red-600">
+            <div id="name-tag"><h3>type and # tags</h3></div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./index.js"></script>
   </body>
