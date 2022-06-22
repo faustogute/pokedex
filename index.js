@@ -24,6 +24,10 @@ const getPokemonData = async (pokemon) => {
   } catch (error) {
     nameScreen.innerHTML = "Pokemon not found";
     inputField.value = "";
+    heightTag.innerHTML = "";
+    weightTag.innerHTML = "";
+    idScreen.innerHTML = "";
+    typeScreen.innerHTML = "";
   }
 };
 
