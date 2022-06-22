@@ -8,19 +8,14 @@
     <title>Pokédex</title>
   </head>
   <body>
-    <div
-      id="container"
-      class="container mx-auto px-4 py-4 border-2 border-red-600"
-    >
+    <div id="container" class="container mx-auto px-4 py-4">
       <div id="logo" class="flex justify-center my-4">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/269px-International_Pok%C3%A9mon_logo.svg.png"
           alt="logo"
         />
       </div>
-      <div
-        class="rounded border-2 border-red-600 flex justify-center py-2 my-4"
-      >
+      <div class="flex justify-center py-2 my-4">
         <input
           id="search-box"
           type="text"
@@ -33,45 +28,97 @@
           Search
         </button>
       </div>
-      <div
-        id="pokedex"
-        class="rounded border-2 border-red-600 grid grid-cols-8 h-[40rem]"
-      >
+      <!-- POKEDEX -->
+      <div id="pokedex" class="grid grid-cols-12 h-[40rem] my-8">
+        <!-- LEFT PANEL  -->
         <div
-          id="left-panel"
-          class="rounded border-2 border-red-600 grid grid-rows-4 grid-flow-col gap-2 col-start-2 col-span-3"
+          class="rounded-l-xl border-4 border-r-2 border-black grid grid-rows-4 grid-flow-col col-start-3 col-span-4"
         >
-          <div class="rounded border-2 border-red-600" id="top-panel-left">
-            <div>Big circle</div>
-            <div>small circle 1</div>
-            <div>small circle 2</div>
-            <div>small circle 3</div>
+          <!-- TOP LEFT PANEL -->
+          <div class="rounded-tl-lg grid grid-cols-9 align-center bg-rose-700">
+            <div
+              class="border-4 border-black rounded-full col-span-3 bg-white w-28 h-28 mx-2 my-2 flex justify-center items-center"
+            >
+              <div
+                class="border-4 border-black rounded-full bg-cyan-400 w-24 h-24"
+              ></div>
+            </div>
+            <div
+              class="border-4 border-black rounded-full col-span-1 bg-red-600 w-8 h-8 mx-2 my-2"
+            ></div>
+            <div
+              class="border-4 border-black rounded-full col-span-1 bg-yellow-400 w-8 h-8 mx-2 my-2"
+            ></div>
+            <div
+              class="border-4 border-black rounded-full col-span-1 bg-lime-500 w-8 h-8 mx-2 my-2"
+            ></div>
           </div>
-          <div
-            id="middle-panel-left"
-            class="rounded border-2 border-red-600 row-span-2"
-          >
-            <div id="screen"><h3>screen</h3></div>
+          <!-- MIDDLE LEFT PANEL -->
+          <div class="row-span-2 flex justify-center items-center bg-rose-700">
+            <!-- SCREEN BORDER -->
+            <div
+              class="rounded-bl-3xl border-4 border-black bg-white w-72 h-72 flex justify-center items-center"
+            >
+              <!-- MAIN SCREEN -->
+              <div
+                id="main-screen"
+                class="rounded-xl border-4 border-black grid h-52 w-52 bg-center bg-no-repeat bg-contain bg-green-500"
+              ></div>
+            </div>
           </div>
-          <div id="bottom-panel-left" class="rounded border-2 border-red-600">
-            <div id="name-tag"><h3>name tag</h3></div>
+          <!-- BOTTOM LEFT PANEL -->
+          <div class="rounded-bl-lg grid grid-cols-8 grid-rows-5 bg-rose-700">
+            <!-- NAME SCREEN -->
+            <div
+              class="rounded-md border-4 border-black bg-green-600 col-start-3 col-span-4 row-start-2 row-span-2 flex justify-center items-center"
+            >
+              <span id="name-screen" class="font-mono font-semibold"></span>
+            </div>
           </div>
         </div>
+        <!-- RIGHT PANEL -->
         <div
-          id="right-panel"
-          class="rounded border-2 border-red-600 grid grid-rows-4 grid-flow-col gap-2 col-start-5 col-span-3"
+          class="rounded-r-xl border-4 border-l-2 border-black grid grid-rows-4 grid-flow-col col-start-7 col-span-4"
         >
-          <div class="rounded border-2 border-red-600" id="top-panel-left">
-            <h3>Blank</h3>
-          </div>
+          <!-- TOP RIGHT PANEL -->
+          <div class="rounded-tr-lg bg-rose-700" id="top-panel-left"></div>
+          <!-- MIDDLE RIGHT PANEL  -->
           <div
-            id="middle-panel-left"
-            class="rounded border-2 border-red-600 row-span-2"
+            class="bg-rose-700 row-span-2 flex flex-col justify-center items-center"
           >
-            <div id="screen"><h3>small screen</h3></div>
+            <!-- SECONDARY SCREEN -->
+            <div
+              id="secondary-screen"
+              class="rounded-md border-4 bg-neutral-400 border-black w-2/3 h-24 flex flex-col justify-evenly px-4 my-2"
+            >
+              <span id="height-tag" class="font-mono font-semibold"></span>
+              <span id="weight-tag" class="font-mono font-semibold"></span>
+            </div>
+            <div class="w-2/3 h-24 grid grid-cols-5">
+              <div class="rounded border-2 border-black bg-sky-500"></div>
+              <div class="rounded border-2 border-black bg-sky-500"></div>
+              <div class="rounded border-2 border-black bg-sky-500"></div>
+              <div class="rounded border-2 border-black bg-sky-500"></div>
+              <div class="rounded border-2 border-black bg-sky-500"></div>
+              <div class="rounded border-2 border-black bg-sky-500"></div>
+              <div class="rounded border-2 border-black bg-sky-500"></div>
+              <div class="rounded border-2 border-black bg-sky-500"></div>
+              <div class="rounded border-2 border-black bg-sky-500"></div>
+              <div class="rounded border-2 border-black bg-sky-500"></div>
+            </div>
           </div>
-          <div id="bottom-panel-left" class="rounded border-2 border-red-600">
-            <div id="name-tag"><h3>type and # tags</h3></div>
+          <!-- BOTTOM RIGHT PANEL -->
+          <div class="rounded-br-lg grid grid-cols-7 grid-rows-5 bg-rose-700">
+            <div
+              class="rounded-md border-4 border-black bg-neutral-400 col-start-2 col-span-2 row-start-2 row-span-2 flex justify-center items-center"
+            >
+              <span id="type-screen" class="font-mono font-semibold"></span>
+            </div>
+            <div
+              class="rounded-md border-4 border-black bg-neutral-400 col-start-5 col-span-2 row-start-2 row-span-2 flex justify-center items-center"
+            >
+              <span id="id-screen" class="font-mono font-semibold"></span>
+            </div>
           </div>
         </div>
       </div>
